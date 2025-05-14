@@ -1,28 +1,24 @@
-# 📦 Booting the Library
-
-```lua
-local UnfairLibrary = require(game.ReplicatedStorage:WaitForChild("UnfairLibrary"))
-```
+# Booting the Library
 ```lua
 local UnfairLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/UnfairLTD/UnfairLibary/refs/heads/main/Source.lua"))()
 ```
 
-# 🪟 Creating the Main Window
+# Creating the Main Window
 ```lua
 local Window = UnfairLibrary:CreateWindow("UI Name")
 ```
 
-# 📁 Creating Tabs
+# Creating Tabs
 ```lua
 local Tab = Window:CreateTab("Main")
 ```
 
-# 🔖 Label:
+# Label:
 ```lua
 Window:AddLabel(Tab, "This is a label")
 ```
 
-# 🔘 Button
+# Button
 
 ```lua
 Window:AddButton(Tab, "Click Me", function()
@@ -31,7 +27,7 @@ Window:AddButton(Tab, "Click Me", function()
 end)
 ```
 
-# ✅ Toggle
+# Toggle
 
 ```lua
 Window:AddToggle(Tab, "Enable Feature", function(state)
@@ -39,7 +35,7 @@ Window:AddToggle(Tab, "Enable Feature", function(state)
 end)
 ```
 
-# 🔡 Input Box
+# Input Box
 
 ```lua
 Window:AddInput(Tab, "Type here", function(text)
@@ -47,7 +43,7 @@ Window:AddInput(Tab, "Type here", function(text)
 end)
 ```
 
-# 🔽 Dropdown
+# Dropdown
 
 ```lua
 Window:AddDropdown(Tab, "Select Color", {"Red", "Green", "Blue"}, function(option)
@@ -55,7 +51,7 @@ Window:AddDropdown(Tab, "Select Color", {"Red", "Green", "Blue"}, function(optio
 end)
 ```
 
-# 🎚️ Slider
+# Slider
 
 ```lua
 Window:AddSlider(Tab, "Volume", 0, 10, function(value)
@@ -63,13 +59,13 @@ Window:AddSlider(Tab, "Volume", 0, 10, function(value)
 end)
 ```
 
-# 🔔 Notification
+# Notification
 ```lua
 Window:Notify("This is a notification message!")
 ```
 
 Coming Soon
-# - 🎨 Color Picker
-# - ☑️ Tickbox (separate visual from Toggle)
-# - 🧩 Theme/Style customization
-# - 🪟 Window resizing
+# -  Color Picker
+# -  Tickbox (separate visual from Toggle)
+# -  Theme/Style customization
+# -  Window resizing
