@@ -4,12 +4,12 @@
 local UnfairLibrary = require(game.ReplicatedStorage:WaitForChild("UnfairLibrary"))
 ```
 ```lua
-local UnfairLibrary = loadstring(game:HttpGet("https://your_raw_url_here"))()
+local UnfairLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/UnfairLTD/UnfairLibary/refs/heads/main/Source.lua"))()
 ```
 
 # 🪟 Creating the Main Window
 ```lua
-local Window = UnfairLibrary:CreateWindow("Unfair Hub")
+local Window = UnfairLibrary:CreateWindow("UI Name")
 ```
 
 # 📁 Creating Tabs
