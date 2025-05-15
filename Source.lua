@@ -5,6 +5,13 @@ local UnfairLibrary = {}
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 local LocalPlayer = Players.LocalPlayer
+local Http = HttpGet()
+
+-- Auto-destroy existing UI
+local existing = game.CoreGui:FindFirstChild("UnfairLibrary")
+if existing then
+    existing:Destroy()
+end
 
 local function createUICorner(radius)
     local corner = Instance.new("UICorner")
@@ -13,8 +20,9 @@ local function createUICorner(radius)
 end
 
 function UnfairLibrary:CreateWindow(title)
-    local gui = Instance.new("ScreenGui", game.CoreGui)
+    local gui = Instance.new("ScreenGui")
     gui.Name = "UnfairLibrary"
+    gui.Parent = game.CoreGui
 
     local main = Instance.new("Frame", gui)
     main.Size = UDim2.new(0, 500, 0, 350)
